@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thư Mời Đặc Biệt</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      padding: 50px;
+      background-color: #fffbe6;
+    }
+    .envelope {
+      border: 2px solid brown;
+      padding: 30px;
+      background-color: #fff;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .envelope:hover {
+      transform: scale(1.02);
+    }
+    .letter-content {
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="envelope" onclick="document.getElementById('content').style.display = 'block';">
+    ✉️ Bấm vào để mở thư
+    <div class="letter-content" id="content">
+      <h2>Thân gửi bạn!</h2>
+      <p>Bạn được mời đến sự kiện đặc biệt vào lúc 7h tối ngày 7/7/2025.<br>
+      Địa điểm: Nhà hàng Ánh Sao, TP.HCM.<br>
+      Hẹn gặp bạn!</p>
+    </div>
+  </div>
+</body>
+</html>
